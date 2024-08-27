@@ -1,0 +1,13 @@
+ *{
+    padding: 0px;
+    margin: 0px;
+ }
+body a { 
+
+    text-decoration: none;
+    font-size: 35px;
+    font-family: "Algerian", serif;
+    color: black;
+   padding: 100vh 40px;
+
+}
