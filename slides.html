@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+ <div class="container">
+    <img src="">
+    <img src="">
+    <img src="">
+    <img src="">
+    <img src="">
+ </div>
+
+ <script>
+    const images = document.querySelectorAll('.container img');
+
+    images.forEach(img => {
+        img.addEventListener('click', () => {
+            // Remove the 'selected' class from all images
+            images.forEach(i => i.classList.remove('selected'));
+
+            // Add the 'selected' class to the clicked image
+            img.classList.add('selected');
+        });
+    });
+</script>
+</body>
+</html>
